@@ -76,8 +76,6 @@ func main() {
 
 	lastMeeting := calculateLastMeeting(db, time.Now(), time.Tuesday, 19)
 
-	log.Println("Last meeting: ", lastMeeting)
-
 	var offRepStatus []struct {
 		FirstName string `db:"first_name"`
 		LastName  string `db:"last_name"`
